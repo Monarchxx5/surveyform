@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins';
+    background-image: url(/images/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+.navbar-brand {
+    display: flex;
+}
+.navbar-brand img{
+    height: 5vh;
+    width: 5vh;
+}
+.is-invalid {
+    border-color: red;
+}
+.invalid-feedback {
+    display: none;
+}
+.is-invalid + .invalid-feedback {
+    display: block;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    outline: solid rgba(0, 0, 0, 0.318) 2px;
+    box-shadow: rgba(20, 2, 93, 0.5) -5px 2px 20px 0px;
+}
+.container h2{
+    font-weight: bold;  
+
+}
+.mb-3{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.btn{
+    border-radius: 50px;
+}
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 15%;
+/*    background-color: rgba(0, 0, 0, 0.727);
+    backdrop-filter: blur(5px); */
+    z-index: 9999;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5em;
+    animation: pop-in 0.5s ease-out, ease-in shake 0.7s ;
+}
+.pop-up img{
+    margin: 1em;
+    height: 80%;
+    width: 80;
+}
+@keyframes pop-in {
+    from {opacity: 0; transform: scale(0.1);}
+    to {opacity: 1; transform: scale(1);}
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.pop-up-yes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 28%;
+    top: 15%;
+    z-index: 9999;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+.pop-up-yes img{
+    margin: 1em;
+    height: 70%;
+    width: 70%;
+    animation-name: pop-in;
+    animation-duration: 1.5s;
+}
