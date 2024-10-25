@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png" sizes="64x64">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/surveystyle.css">
+</head>
+      <body>
+        <div class="pop-up" id="pop-up">
+            <img src="/images/stop-sign.png" alt="STOP">
+        </div>
+
+        <div class="pop-up-yes" id="pop-up-yes">
+            <div class="inside-pop">
+            <img src="/images/success-sign.png" alt="SUCCESS!">
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark  sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="/images/favicon.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Survey Body -->
+        <div class="container p-5 my-5 border" id="surveybody">
+            <h2 class="text-center">PET ADOPTION SURVEY</h2>
+            <form id="surveyForm">
+    
+                <!-- Name Field -->
+                <div class="mb-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <div class="invalid-feedback">Name is required.</div>
+                </div>
+    
+                <!-- Gender Field -->
+                <div class="mb-3 border p-5" id="gender">
+                    <label class="form-label">Gender</label>
+                    <div>
+                        <input type="radio" id="genderMale" name="gender" value="male">
+                        <label for="genderMale">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="genderFemale" name="gender" value="female">
+                        <label for="genderFemale">Female</label>
+                    </div>
+                    <div class="invalid-feedback">Please select your gender.</div>
+                </div>
+    
+                <!-- Question 1 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">What is the main reason you would adopt a pet?</label>
+                    <div>
+                        <input type="radio" id="q1a" name="q1" value="a">
+                        <label for="q1a">Companionship</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1b" name="q1" value="b">
+                        <label for="q1b">To help a stray or shelter animal</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1c" name="q1" value="c">
+                        <label for="q1c">For my family's happiness</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1d" name="q1" value="d">
+                        <label for="q1d">For security or protection</label>
+                    </div>
+                    <div class="invalid-feedback">Please answer this question.</div>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">What type of pet would you prefer to adopt?</label>
+                    <div>
+                        <input type="radio" id="q2a" name="q2" value="a">
+                        <label for="q2a">Dog</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2b" name="q2" value="b">
+                        <label for="q2b">Cat</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2c" name="q2" value="c">
+                        <label for="q2c">Bird</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2d" name="q2" value="d">
+                        <label for="q2d">Other small animals (hamsters, rabbits, etc.)</label>
+                    </div>
+                    <div class="invalid-feedback">Please answer this question.</div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">How important is it for you to adopt from a shelter rather than buy from a breeder?</label>
+                    <div>
+                        <input type="radio" id="q3a" name="q3" value="a">
+                        <label for="q3a">Very important</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3b" name="q3" value="b">
+                        <label for="q3b">Somewhat important</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3c" name="q3" value="c">
+                        <label for="q3c">Not important</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3d" name="q3" value="d">
+                        <label for="q3d">Not sure</label>
+                    </div>
+                    <div class="invalid-feedback">Please answer this question.</div>
+                </div>
+    
+                <!-- Question 4 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">What factors influence your decision to adopt a pet? (Select all that apply)</label>
+                    <div>
+                        <input type="checkbox" id="q4a" name="q4" value="a">
+                        <label for="q4a">Pet's breed</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="q4b" name="q4" value="b">
+                        <label for="q4b">Pet's age</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="q4c" name="q4" value="c">
+                        <label for="q4c">Adoption cost</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="q4d" name="q4" value="d">
+                        <label for="q4d">Health and medical history</label>
+                    </div>
+                    <div class="invalid-feedback">Please select at least one option.</div>
+                </div>
+    
+                <!-- Question 5 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">How likely are you to recommend pet adoption to others?</label>
+                    <div>
+                        <input type="radio" id="q5a" name="q5" value="a">
+                        <label for="q5a">Very likely</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5b" name="q5" value="b">
+                        <label for="q5b">Likely</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5c" name="q5" value="c">
+                        <label for="q5c">Unlikely</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5d" name="q5" value="d">
+                        <label for="q5d">Very unlikely</label>
+                    </div>
+                    <div class="invalid-feedback">Please answer this question.</div>
+                </div>
+    
+                <!-- Question 6 -->
+                <div class="mb-3 border p-5">
+                    <label class="form-label">What is your main concern when adopting a pet?</label>
+                    <div>
+                        <input type="radio" id="q6a" name="q6" value="a">
+                        <label for="q6a">Time commitment</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6b" name="q6" value="b">
+                        <label for="q6b">Financial cost</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6c" name="q6" value="c">
+                        <label for="q6c">Space at home</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6d" name="q6" value="d">
+                        <label for="q6d">Behavioral issues</label>
+                    </div>
+                    <div class="invalid-feedback">Please answer this question.</div>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-center w-100 my-5">
+                    <button type="submit" class="btn btn-primary w-50">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <script src="js/surveyvalidation.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
